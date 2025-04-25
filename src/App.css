@@ -1,0 +1,71 @@
+.First-nav-part {
+  display: flex !important;
+  justify-content: start !important;
+  align-items: center !important;
+}
+a:hover {
+  background-color: rgb(69, 69, 204);
+  font-size: 15px;
+  border-radius: 5px;
+}
+.navbar-underline {
+  height: 1px;
+  width: 100%;
+  color: grey;
+}
+
+/* search */
+
+.MovieVerse-Heading {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.second-section {
+  width: 100%;
+}
+.search-bar-input {
+  width: 65%;
+  margin-left: 80px;
+  background-color: black;
+  border: transparent;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.search-bar-button {
+  padding: 10px;
+  border-radius: 10px;
+  width: 7%;
+  margin-left: 5px;
+}
+.search-bar-button:hover {
+  background-color: rgb(69, 69, 204);
+}
+
+/* card */
+.line-1-compo {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 35px;
+  column-gap: 35px;
+}
+.Movie-card {
+  border-radius: 1.2rem;
+  border: transparent;
+  background-color: black;
+  color: white;
+  margin: 20px;
+  position: relative;
+}
+.card-img-top {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.overlay{
+  position: absolute;
+}
+.fav-icon{
+ display: flex;
+ justify-content: end;
+}
