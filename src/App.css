@@ -3,7 +3,25 @@
   justify-content: start !important;
   align-items: center !important;
 }
+.Favorites-nav{
+  text-decoration: none;
+  color: white;
+}
+.Home-nav{
+  text-decoration: none;
+  color: white;
+}
 a:hover {
+  background-color: rgb(69, 69, 204);
+  font-size: 15px;
+  border-radius: 5px;
+}
+.Home-nav:hover{
+  background-color: rgb(69, 69, 204);
+  font-size: 15px;
+  border-radius: 5px;
+}
+.Favorites-nav:hover{
   background-color: rgb(69, 69, 204);
   font-size: 15px;
   border-radius: 5px;
