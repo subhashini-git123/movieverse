@@ -6,25 +6,27 @@
 .Favorites-nav{
   text-decoration: none;
   color: white;
+  padding: 10px;
+  margin: 10px;
 }
 .Home-nav{
   text-decoration: none;
   color: white;
+  padding: 10px;
+  margin: 10px;
 }
-a:hover {
-  background-color: rgb(69, 69, 204);
-  font-size: 15px;
-  border-radius: 5px;
-}
+
 .Home-nav:hover{
   background-color: rgb(69, 69, 204);
   font-size: 15px;
   border-radius: 5px;
+  color: white;
 }
 .Favorites-nav:hover{
   background-color: rgb(69, 69, 204);
   font-size: 15px;
   border-radius: 5px;
+  color: white;
 }
 .navbar-underline {
   height: 1px;
@@ -33,7 +35,6 @@ a:hover {
 }
 
 /* search */
-
 .MovieVerse-Heading {
   font-size: 30px;
   font-weight: bold;
@@ -62,7 +63,7 @@ a:hover {
 }
 
 /* card */
-.line-1-compo {
+.movie-grid {
   display: flex;
   flex-wrap: wrap;
   row-gap: 35px;

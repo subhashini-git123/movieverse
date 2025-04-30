@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from '../context/GlobalState';
-import { FaHeart } from 'react-icons/fa'; // 
+import { FaHeart } from 'react-icons/fa'; 
 
 const AddFavorites = () => {
   const { favourite, removeMovieFromFavorite } = useContext(GlobalContext);
@@ -12,7 +12,7 @@ const AddFavorites = () => {
   return (
     <div className="bg-dark p-4 text-white">
       <h2>Your Favorites</h2>
-      <div className="favorites-grid line-1-compo">
+      <div className="favorites-grid d-flex">
         {favourite.length === 0 ? (
           <p>No favorites added yet.</p>
         ) : (
@@ -29,7 +29,7 @@ const AddFavorites = () => {
               </div>
               <div className="card-footer bg-transparent border-success">
                 <FaHeart
-                  color="red" // 
+                  color="red" 
                   onClick={() => handleRemoveFromFavorites(movie)}
                 />
               </div>

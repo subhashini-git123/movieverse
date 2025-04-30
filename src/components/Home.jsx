@@ -1,8 +1,11 @@
 import React from 'react'
+import Card from './Card'
 
 const Home = () => {
   return (
-    <div>My movies List</div>
+    <div>
+      <Card/>
+    </div>
   )
 }
 

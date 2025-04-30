@@ -5,32 +5,23 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Card from "./components/Card";
 import AddFavorites from "./components/AddFavorites";
-import Favorites from "./components/Favorites";
 import { GlobalProvider } from "./context/GlobalState";
 
 function App() {
   return (
     <GlobalProvider>
-      <div className="App">
         <Router>
-          <Navbar />
+        <Navbar/>
           <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Home />
-                </>
-              }
-            />
-            <Route path="/addfavorites" element={<AddFavorites />}></Route>
+          <Route path="/" element={<Card/>} />
+          <Route path="/home" element={<><Home /></>} />
+          <Route path="/addfavorites" element={<AddFavorites />} />
           </Routes>
-
-          <Card />
         </Router>
-      </div>
     </GlobalProvider>
   );
 }
+
+
 
 export default App;

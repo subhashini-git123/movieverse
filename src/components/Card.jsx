@@ -7,10 +7,9 @@ import Search from "./Search";
 import { FaHeart } from "react-icons/fa";
 
 const Card = () => {
-  const { moviesList, addMovieToFavourite, favourite, removeMovieFromFavorite } =
+  const { addMovieToFavourite, favourite, removeMovieFromFavorite } =
     useContext(GlobalContext);
   const [movieList, setMovieList] = useState([]);
-
   const [search, setSearch] = useState("");
 
   const getMovie = () => {
@@ -22,6 +21,7 @@ const Card = () => {
   };
 
   useEffect(() => {
+    console.log("Card component mounted");
     getMovie();
   }, []);
 
@@ -38,9 +38,11 @@ const Card = () => {
   };
 
   return (
+    
     <div className="bg-dark p-4">
+        
       <Search search={search} setSearch={setSearch} />
-      <div className="line-1-compo m-4 p-4 bg-dark">
+      <div className="movie-grid m-4 p-4 bg-dark">
         {movieList.map((movie) => {
           return (
             <div className="card Movie-card" key={movie.id}>
