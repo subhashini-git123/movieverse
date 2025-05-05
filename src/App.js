@@ -13,8 +13,8 @@ function App() {
         <Router>
         <Navbar/>
           <Routes>
-          <Route path="/" element={<Card/>} />
-          <Route path="/home" element={<><Home /></>} />
+          <Route path="/" element={<Home />} /> 
+          <Route path="/home" element={<Home />} />
           <Route path="/addfavorites" element={<AddFavorites />} />
           </Routes>
         </Router>

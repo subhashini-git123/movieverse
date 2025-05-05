@@ -15,6 +15,9 @@
   padding: 10px;
   margin: 10px;
 }
+.secd-div-nav{
+  list-style: none;
+}
 
 .Home-nav:hover{
   background-color: rgb(69, 69, 204);
